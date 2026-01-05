@@ -5609,8 +5609,8 @@
         <activity android:name="com.crdroid.settings.fragments.about.DonateActivity"
                 android:label="@string/crdroid_donate_title"
                 android:theme="@style/SupportStyle"
-                android:enabled="true"
-                android:exported="true"
+                android:enabled="false"
+                android:exported="false"
                 android:taskAffinity="com.android.settings"
                 android:parentActivityName="Settings">
             <intent-filter android:priority="70">
@@ -5618,7 +5618,7 @@
             </intent-filter>
         </activity>
         <receiver android:name="com.crdroid.settings.fragments.about.DonateReceiver"
-            android:enabled="true"
+            android:enabled="false"
             android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
